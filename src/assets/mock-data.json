@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "title": "Samsung S22",
+        "providerName": "Samsung",
+        "tag": "New",
+        "url": "https://samsung-akinon.b-cdn.net/cms/2022/02/28/298f495a-bdcc-4404-9020-b0d081743c8b_size1440x450.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Samsung S22 Plus",
+        "providerName": "Samsung",
+        "tag": "Best",
+        "url": "https://images.samsung.com/tr/smartphones/galaxy-s22/images/galaxy-s22_banner_smart-switch.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Samsung S22 Ultra",
+        "providerName": "Samsung",
+        "tag": "New",
+        "url": "https://images.samsung.com/tr/smartphones/galaxy-s22-ultra/images/galaxy-s22-ultra_highlights_kv_img.jpg"
+    },
+    {
+        "id": "4",
+        "title": "iphone 13",
+        "providerName": "Apple",
+        "tag": null,
+        "url": "https://productimages.hepsiburada.net/s/189/550/110000155170656.jpg/format:webp"
+    }
+]

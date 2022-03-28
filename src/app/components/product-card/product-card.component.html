@@ -1,0 +1,11 @@
+<div class="card">
+    <img *ngIf="product.url !== ''" src="{{product.url}}" class="card-img-top" alt="{{product.title}}">
+    <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">
+            Provider: {{product.providerName}}
+        </p>
+        <small>Tags: {{product.tag}}</small>
+        <button type="button" class="btn btn-primary" [routerLink]="['/pages/product', {id:product.id}]">Detail</button>
+    </div>
+</div>

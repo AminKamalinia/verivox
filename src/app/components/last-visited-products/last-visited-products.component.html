@@ -1,0 +1,11 @@
+<h1>Last visited products</h1>
+
+<div class="card">
+    <div class="card-body">
+        <section class="row">
+            <ng-container *ngFor="let item of products">
+                <app-product-card [product]="item" class="col-md-2"></app-product-card>
+            </ng-container>
+        </section>
+    </div>
+</div>

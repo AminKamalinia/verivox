@@ -1,0 +1,21 @@
+@import "../../scss/colors.scss";
+@import "../../scss/variables.scss";
+
+#contentSection {
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: $white;
+    margin-left: 0px;
+    padding: 2%;
+    padding-bottom: calc(2% + #{$last-played-games-height});
+}
+
+.sidebarWidth {
+    width: calc(100% - #{$sidebar-width}) !important;
+    margin-left: $sidebar-width !important;
+}

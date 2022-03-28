@@ -1,0 +1,29 @@
+<h1>Products</h1>
+
+<div class="card">
+	<div class="card-body">
+		<section id="searchSection" class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="providerDropdownMulti">Search</label>
+					<input type="search" class="form-control form-control-sm" id="search" name="search"
+						placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="editSearchText()" />
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="providerDropdownMulti">Providers</label>
+					<ng-select [virtualScroll]="true" id="providerDropdownMulti" name="providerDropdownMulti"
+						[items]="providers" class="ng-select-size-sm" [multiple]="true" [closeOnSelect]="false"
+						[hideSelected]="false" [(ngModel)]="selectedProviders" (ngModelChange)="editSearchText()">
+					</ng-select>
+				</div>
+			</div>
+		</section>
+		<section class="row">
+			<ng-container *ngFor="let item of products">
+				<app-product-card [product]="item" class="col-md-4"></app-product-card>
+			</ng-container>
+		</section>
+	</div>
+</div>

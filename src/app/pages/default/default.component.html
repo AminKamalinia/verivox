@@ -1,0 +1,11 @@
+<h1>Default Page</h1>
+
+<div class="card">
+	<div class="card-body">
+		<section class="row">
+			<ng-container *ngFor="let item of products">
+				<app-product-card [product]="item" class="col-md-4"></app-product-card>
+			</ng-container>
+		</section>
+	</div>
+</div>
