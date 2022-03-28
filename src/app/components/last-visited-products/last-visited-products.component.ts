@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Product } from 'src/app/models';
 import { ProductService } from 'src/app/services';
@@ -8,7 +8,7 @@ import { ProductService } from 'src/app/services';
   templateUrl: './last-visited-products.component.html',
   styleUrls: ['./last-visited-products.component.scss']
 })
-export class LastVisitedProductsComponent implements OnInit {
+export class LastVisitedProductsComponent implements OnInit, OnDestroy {
 
   products: Product[];
   private subscription: Subscription;

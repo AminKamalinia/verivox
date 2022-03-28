@@ -6,10 +6,10 @@ export class Product {
     url: string;
 
     constructor() {
-        this.id = "";
-        this.title = "";
+        this.id = '';
+        this.title = '';
         this.tag = null;
-        this.providerName = "";
-        this.url = "";
+        this.providerName = '';
+        this.url = '';
     }
 }
